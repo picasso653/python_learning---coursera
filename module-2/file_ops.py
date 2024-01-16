@@ -1,19 +1,5 @@
 def read_file(file_name):
-    """ Reads in a file.
-
-    [IMPLEMENT ME]
-        1. Open and read the given file into a variable using the File read()
-           function
-        2. Print the contents of the file
-        3. Return the contents of the file
-
-    Args:
-        file_name: the name of the file to be read
-
-    Returns:
-        string: contents of the given file.
-    """
-    ### WRITE SOLUTION HERE
+    
     with open(file_name, 'r') as File:
         data = File.read()
         print(data)
@@ -23,20 +9,7 @@ def read_file(file_name):
     raise NotImplementedError()
 
 def read_file_into_list(file_name):
-    """ Reads in a file and stores each line as an element in a list
-
-    [IMPLEMENT ME]
-        1. Open the given file
-        2. Read the file line by line and append each line to a list
-        3. Return the list
-
-    Args:
-        file_name: the name of the file to be read
-
-    Returns:
-        list: a list where each element is a line in the file.
-    """
-    ### WRITE SOLUTION HERE
+   
     with open(file_name, 'r') as file:
         return file.readlines()
 
