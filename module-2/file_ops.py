@@ -26,20 +26,6 @@ def write_first_line_to_file(file_contents, output_filename):
 
 
 def read_even_numbered_lines(file_name):
-    """ Reads in the even numbered lines of a file
-
-    [IMPLEMENT ME]
-        1. Open and read the given file into a variable
-        2. Read the file line-by-line and add the even-numbered lines to a list
-        3. Return the list
-
-    Args:
-        file_name: the name of the file to be read
-
-    Returns:
-        list: a list of the even-numbered lines of the file
-    """
-    ### WRITE SOLUTION HERE
     with open(file_name) as file:
         lines = file.readlines()
         return [lines[i] for i in range(1, len(lines), 2)]
@@ -47,21 +33,6 @@ def read_even_numbered_lines(file_name):
     raise NotImplementedError()
 
 def read_file_in_reverse(file_name):
-    """ Reads a file and returns a list of the lines in reverse order
-
-    [IMPLEMENT ME]
-        1. Open and read the given file into a variable
-        2. Read the file line-by-line and store the lines in a list in reverse order
-        3. Print the list
-        4. Return the list
-
-    Args:
-        file_name: the name of the file to be read
-
-    Returns:
-        list: list of the lines of the file in reverse order.
-    """
-    ### WRITE SOLUTION HERE
     with open(file_name) as file:
         order = file.readlines()
         order.reverse()
@@ -70,10 +41,6 @@ def read_file_in_reverse(file_name):
 
     raise NotImplementedError()
 
-'''
-Here are some sample commands to help you run/test your implementations.
-Feel free to uncomment/modify/add to them as you wish.
-'''
 def main():
     file_contents = read_file("sampletext.txt")
     # print(read_file_into_list("sampletext.txt"))
@@ -85,3 +52,10 @@ if __name__ == "__main__":
     main()
 
 print(main)
+
+# I have no idea what I'm doing to
+    
+"""
+Okay so I'm out data and I can't continue my lessons as of now 
+Let's ust make this look like we dey do something
+ """
