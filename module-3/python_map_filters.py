@@ -15,11 +15,13 @@ Map prints whatever the item returns in a list.
 
 
 filter_coffee = filter(find_coffee, menu)
+filter_coffee = [filter for filter in filter_coffee]
 
-for i in filter_coffee:
-    print(i)
+print(filter_coffee)
 
-    """
+# for i in filter_coffee:
+#     print(i)
+"""
     filter does the same but different. With filter you get a
  list of items that returned True when passed through the function
     """
