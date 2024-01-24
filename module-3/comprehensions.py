@@ -74,7 +74,6 @@ def map_id_to_initial(employee_list):
    Returns:
       dict - A dictionary mapping an employee's id (value) to their first initial (key).
    """
-   ### WRITE SOLUTION CODE HERE
    id_to_initial = {e['name'][0]: e['id'] for e in employee_list }
 
    return id_to_initial
